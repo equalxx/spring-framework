@@ -54,7 +54,7 @@ normalization {
 }
 
 javadoc {
-	description = "Generates project-level javadoc for use in -javadoc jar"
+	description = "Generates projects-level javadoc for use in -javadoc jar"
 
 	options.encoding = "UTF-8"
 	options.memberLevel = JavadocMemberLevel.PROTECTED

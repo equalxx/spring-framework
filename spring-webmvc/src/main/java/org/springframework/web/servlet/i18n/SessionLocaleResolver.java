@@ -49,7 +49,7 @@ import org.springframework.web.util.WebUtils;
  * lost when each session terminates.
  *
  * <p>Note that there is no direct relationship with external session management
- * mechanisms such as the "Spring Session" project. This {@code LocaleResolver}
+ * mechanisms such as the "Spring Session" projects. This {@code LocaleResolver}
  * will simply evaluate and modify corresponding {@code HttpSession} attributes
  * against the current {@code HttpServletRequest}.
  *

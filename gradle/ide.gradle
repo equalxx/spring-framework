@@ -8,7 +8,7 @@ eclipse.jdt {
 	targetCompatibility = 1.8
 }
 
-// Replace classpath entries with project dependencies (GRADLE-1116)
+// Replace classpath entries with projects dependencies (GRADLE-1116)
 // https://issues.gradle.org/browse/GRADLE-1116
 eclipse.classpath.file.whenMerged { classpath ->
 	def regexp = /.*?\/([^\/]+)\/build\/([^\/]+\/)+(?:main|test)/ // only match those that end in main or test (avoids removing necessary entries like build/classes/jaxb)
@@ -44,7 +44,7 @@ eclipse.classpath.file.whenMerged { classpath ->
 	}
 }
 
-// Ensure project dependencies come after 3rd-party libs (SPR-11836)
+// Ensure projects dependencies come after 3rd-party libs (SPR-11836)
 // https://jira.spring.io/browse/SPR-11836
 eclipse.classpath.file.whenMerged { classpath ->
 	classpath.entries.findAll { it instanceof ProjectDependency }.each {
@@ -65,13 +65,13 @@ eclipse.classpath.file.whenMerged {
 }
 
 // Allow projects to be used as WTP modules
-eclipse.project.natures "org.eclipse.wst.common.project.facet.core.nature"
+eclipse.project.natures "org.eclipse.wst.common.projects.facet.core.nature"
 
-// Include project specific settings
+// Include projects specific settings
 task eclipseSettings(type: Copy) {
 	from rootProject.files(
 		"src/eclipse/org.eclipse.jdt.ui.prefs",
-		"src/eclipse/org.eclipse.wst.common.project.facet.core.xml")
+		"src/eclipse/org.eclipse.wst.common.projects.facet.core.xml")
 	into project.file('.settings/')
 	outputs.upToDateWhen { false }
 }
@@ -94,7 +94,7 @@ task cleanEclipseJdtUi(type: Delete) {
 	delete project.file(".settings/org.eclipse.jdt.core.prefs")
 	delete project.file(".settings/org.eclipse.jdt.ui.prefs")
 	delete project.file(".settings/org.eclipse.wst.common.component")
-	delete project.file(".settings/org.eclipse.wst.common.project.facet.core.xml")
+	delete project.file(".settings/org.eclipse.wst.common.projects.facet.core.xml")
 }
 
 task eclipseBuildship(type: Copy) {

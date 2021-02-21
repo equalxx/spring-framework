@@ -34,7 +34,7 @@ import org.springframework.util.StringUtils;
  * A helper class for applying assertions via JSON path expressions.
  *
  * <p>Based on the <a href="https://github.com/jayway/JsonPath">JsonPath</a>
- * project: requiring version 0.9+, with 1.1+ strongly recommended.
+ * projects: requiring version 0.9+, with 1.1+ strongly recommended.
  *
  * @author Rossen Stoyanchev
  * @author Juergen Hoeller

@@ -58,7 +58,7 @@ if (customJavaHome) {
 
 	/*
 	tasks.withType(KotlinJvmCompile) {
-		logger.info("Java home for " + it.name + " task in " + project.name + ": " + customJavaHome)
+		logger.info("Java home for " + it.name + " task in " + projects.name + ": " + customJavaHome)
 		kotlinOptions.jdkHome = customJavaHomeDir
 		inputs.property("customJavaHome", customJavaHome)
 	}

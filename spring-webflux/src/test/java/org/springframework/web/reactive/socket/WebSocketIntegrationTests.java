@@ -183,7 +183,7 @@ class WebSocketIntegrationTests extends AbstractWebSocketIntegrationTests {
 				})
 				.block(TIMEOUT);
 		assertThat(receivedCookieRef.get()).isEqualTo("cookie");
-		assertThat(cookie.get()).isEqualTo("project=spring");
+		assertThat(cookie.get()).isEqualTo("projects=spring");
 	}
 
 
@@ -205,7 +205,7 @@ class WebSocketIntegrationTests extends AbstractWebSocketIntegrationTests {
 		public WebFilter cookieWebFilter() {
 			return (exchange, chain) -> {
 				if (exchange.getRequest().getPath().value().startsWith("/cookie")) {
-					exchange.getResponse().addCookie(ResponseCookie.from("project", "spring").build());
+					exchange.getResponse().addCookie(ResponseCookie.from("projects", "spring").build());
 				}
 				return chain.filter(exchange);
 			};

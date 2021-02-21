@@ -82,7 +82,7 @@ import org.springframework.util.xml.StaxUtils;
  * @since 3.0
  * @see org.jibx.runtime.IMarshallingContext
  * @see org.jibx.runtime.IUnmarshallingContext
- * @deprecated as of Spring Framework 5.1.5, due to the lack of activity on the JiBX project
+ * @deprecated as of Spring Framework 5.1.5, due to the lack of activity on the JiBX projects
  */
 @Deprecated
 public class JibxMarshaller extends AbstractMarshaller implements InitializingBean {

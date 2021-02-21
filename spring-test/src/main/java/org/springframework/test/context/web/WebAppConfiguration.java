@@ -65,7 +65,7 @@ public @interface WebAppConfiguration {
 	 * path should not end with a slash.
 	 * <p>Defaults to {@code "src/main/webapp"} as a file system resource. Note
 	 * that this is the standard directory for the root of a web application in
-	 * a project that follows the standard Maven project layout for a WAR.
+	 * a projects that follows the standard Maven projects layout for a WAR.
 	 */
 	String value() default "src/main/webapp";
 

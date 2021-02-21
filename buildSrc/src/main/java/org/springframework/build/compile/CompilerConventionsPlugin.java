@@ -38,7 +38,7 @@ import org.gradle.api.tasks.compile.JavaCompile;
 public class CompilerConventionsPlugin implements Plugin<Project> {
 
 	/**
-	 * The project property that can be used to switch the Java source
+	 * The projects property that can be used to switch the Java source
 	 * compatibility version for building source and test classes.
 	 */
 	public static final String JAVA_SOURCE_VERSION_PROPERTY = "javaSourceVersion";
@@ -75,7 +75,7 @@ public class CompilerConventionsPlugin implements Plugin<Project> {
 	/**
 	 * Applies the common Java compiler options for main sources, test fixture sources, and
 	 * test sources.
-	 * @param project the current project
+	 * @param project the current projects
 	 */
 	private void applyJavaCompileConventions(Project project) {
 		JavaPluginConvention java = project.getConvention().getPlugin(JavaPluginConvention.class);

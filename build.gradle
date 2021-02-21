@@ -409,7 +409,7 @@ configure(rootProject) {
 			[ 'bin', 'build', 'out', '.settings' ]
 				.collect { rootPath.relativize(new File(dir, it).toPath()) }
 				.forEach { source.exclude "$it/**" }
-			[ '.classpath', '.project' ]
+			[ '.classpath', '.projects' ]
 				.collect { rootPath.relativize(new File(dir, it).toPath()) }
 				.forEach { source.exclude "$it" }
 		}

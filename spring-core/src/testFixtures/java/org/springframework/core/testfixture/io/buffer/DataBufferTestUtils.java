@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
 /**
  * Utility class for working with {@link DataBuffer}s in tests.
  *
- * <p>Note that this class is in the {@code test} tree of the project:
+ * <p>Note that this class is in the {@code test} tree of the projects:
  * the methods contained herein are not suitable for production code bases.
  *
  * @author Arjen Poutsma

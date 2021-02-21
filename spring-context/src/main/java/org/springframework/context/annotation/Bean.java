@@ -111,7 +111,7 @@ import org.springframework.core.annotation.AliasFor;
  * same class by calling them <i>directly</i>. This ensures that references between beans
  * are strongly typed and navigable. Such so-called <em>'inter-bean references'</em> are
  * guaranteed to respect scoping and AOP semantics, just like {@code getBean()} lookups
- * would. These are the semantics known from the original 'Spring JavaConfig' project
+ * would. These are the semantics known from the original 'Spring JavaConfig' projects
  * which require CGLIB subclassing of each such configuration class at runtime. As a
  * consequence, {@code @Configuration} classes and their factory methods must not be
  * marked as final or private in this mode. For example:

@@ -60,8 +60,8 @@ public class PathPatternRouteMatcherTests {
 	public void separatorOnlyDecoded() {
 		PathPatternRouteMatcher routeMatcher = new PathPatternRouteMatcher();
 		RouteMatcher.Route route = routeMatcher.parseRoute("projects.spring%2Eframework");
-		Map<String, String> vars = routeMatcher.matchAndExtract("projects.{project}", route);
-		assertThat(vars).containsEntry("project", "spring.framework");
+		Map<String, String> vars = routeMatcher.matchAndExtract("projects.{projects}", route);
+		assertThat(vars).containsEntry("projects", "spring.framework");
 	}
 
 }

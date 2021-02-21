@@ -43,7 +43,7 @@ import org.springframework.util.ReflectionUtils;
 
 /**
  * This class encapsulates some AspectJ internal knowledge that should be
- * pushed back into the AspectJ project in a future release.
+ * pushed back into the AspectJ projects in a future release.
  *
  * <p>It relies on implementation specific knowledge in AspectJ to break
  * encapsulation and do something AspectJ was not designed to do: query

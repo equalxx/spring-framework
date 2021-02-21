@@ -25,7 +25,7 @@ import org.springframework.beans.factory.xml.AbstractSimpleBeanDefinitionParser;
  *
  * @author Arjen Poutsma
  * @since 3.0
- * @deprecated as of Spring Framework 5.1.5, due to the lack of activity on the JiBX project
+ * @deprecated as of Spring Framework 5.1.5, due to the lack of activity on the JiBX projects
  */
 @Deprecated
 class JibxMarshallerBeanDefinitionParser extends AbstractSimpleBeanDefinitionParser {

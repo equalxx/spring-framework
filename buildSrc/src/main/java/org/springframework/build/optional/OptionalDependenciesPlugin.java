@@ -28,7 +28,7 @@ import org.gradle.plugins.ide.eclipse.model.EclipseModel;
 /**
  * A {@code Plugin} that adds support for Maven-style optional dependencies. Creates a new
  * {@code optional} configuration. The {@code optional} configuration is part of the
- * project's compile and runtime classpath's but does not affect the classpath of
+ * projects's compile and runtime classpath's but does not affect the classpath of
  * dependent projects.
  *
  * @author Andy Wilkinson

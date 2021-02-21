@@ -176,11 +176,11 @@ jobs:
   - put: repo-status-build
     params: { state: "pending", commit: "git-repo" }
   - do:
-    - task: build-project
+    - task: build-projects
       privileged: true
       timeout: ((task-timeout))
       image: spring-framework-ci-image
-      file: git-repo/ci/tasks/build-project.yml
+      file: git-repo/ci/tasks/build-projects.yml
       params:
         BRANCH: ((branch))
         <<: *gradle-enterprise-task-params
@@ -233,11 +233,11 @@ jobs:
   - put: repo-status-jdk11-build
     params: { state: "pending", commit: "git-repo" }
   - do:
-    - task: check-project
+    - task: check-projects
       privileged: true
       timeout: ((task-timeout))
       image: spring-framework-jdk11-ci-image
-      file: git-repo/ci/tasks/check-project.yml
+      file: git-repo/ci/tasks/check-projects.yml
       params:
         BRANCH: ((branch))
         <<: *gradle-enterprise-task-params
@@ -261,11 +261,11 @@ jobs:
     - put: repo-status-jdk15-build
       params: { state: "pending", commit: "git-repo" }
     - do:
-        - task: check-project
+        - task: check-projects
           privileged: true
           timeout: ((task-timeout))
           image: spring-framework-jdk15-ci-image
-          file: git-repo/ci/tasks/check-project.yml
+          file: git-repo/ci/tasks/check-projects.yml
           params:
             BRANCH: ((branch))
             <<: *gradle-enterprise-task-params

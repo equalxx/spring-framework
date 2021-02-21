@@ -28,7 +28,7 @@ import org.springframework.test.context.event.ApplicationEventsHolder;
 /**
  * Default implementation of {@link PublishedEvents}.
  *
- * <p>Copied from the Moduliths project.
+ * <p>Copied from the Moduliths projects.
  *
  * @author Oliver Drotbohm
  * @author Sam Brannen

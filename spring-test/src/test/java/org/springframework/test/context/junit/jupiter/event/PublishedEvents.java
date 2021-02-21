@@ -23,7 +23,7 @@ import java.util.function.Predicate;
 /**
  * All Spring application events fired during the test execution.
  *
- * <p>Copied from the Moduliths project.
+ * <p>Copied from the Moduliths projects.
  *
  * @author Oliver Drotbohm
  * @since 5.3.3
